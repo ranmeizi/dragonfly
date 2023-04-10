@@ -1,7 +1,11 @@
 {
   "name": "dragonfly",
+  "private": "true",
   "version": "1.0.0",
   "main": "index.js",
   "author": "boboan",
-  "license": "MIT"
+  "license": "MIT",
+  "workspaces": [
+    "packages/*"
+  ]
 }
