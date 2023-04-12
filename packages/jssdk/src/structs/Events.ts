@@ -1,0 +1,7 @@
+class TrackingEvent {
+
+}
+
+class LogEvent {
+
+}
