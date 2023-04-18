@@ -5,8 +5,6 @@ shence-adaptor
 
 ## 统一接口 Agent
 
-## 默认实现 impl
-
-## 神策实现 shenceImpl
-
 ## 页面追踪 RefTool 
+
+## Log/Error日志

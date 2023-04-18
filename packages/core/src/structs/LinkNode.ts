@@ -21,7 +21,7 @@
  */
 export class LinkNode {
     val: string // 值
-    prev: LinkNode | null
+    prev: LinkNode | null = null
 
     constructor(val: string) {
         this.val = val
@@ -46,7 +46,7 @@ export function pop(): boolean {
     return false
 }
 
-export function replace(val): boolean {
+export function replace(val:string): boolean {
     const node = new LinkNode(val)
 
     if (curr) {

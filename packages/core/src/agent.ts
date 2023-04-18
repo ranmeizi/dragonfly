@@ -5,24 +5,22 @@ type TrackAdaptor = () => Controller
 class Agent {
     controller?: Controller
 
-    use(adaptor: TrackAdaptor) {
-        this.controller = adaptor()
+    use(impl: TrackAdaptor) {
+        this.controller = impl()
     }
 
     initialize = applyFn('initialize')
     track = applyFn('track')
     setGlobal = applyFn('setGlobal')
     setAccount = applyFn('setAccount')
-    secstart = applyFn('secstart')
-    secend = applyFn('secend')
 }
 
-function applyFn(name) {
-    return function () {
+function applyFn(name: keyof Controller) {
+    return function (this: Agent) {
         if (!this.controller || typeof this.controller[name] !== 'function') {
             return false
         }
-        this.controller[name].apply(this.controller, arguments)
+        this.controller[name].apply(this.controller, arguments as any)
     }
 }
 

@@ -1,0 +1,11 @@
+{
+  "name": "@dgfly/core",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/preset-env": "^7.21.4",
+    "@babel/preset-typescript": "^7.21.4",
+    "jest": "^29.5.0"
+  }
+}

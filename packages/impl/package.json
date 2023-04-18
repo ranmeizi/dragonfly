@@ -1,5 +1,5 @@
 {
-  "name": "@dgfly/jssdk",
+  "name": "@dgfly/adaptor",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT"

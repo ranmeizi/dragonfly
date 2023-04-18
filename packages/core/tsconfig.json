@@ -8,6 +8,5 @@
     "strict": true,
     "skipLibCheck": true,
     "declaration": true
-  },
-  "exclude": ["tests/case/*"]
+  }
 }
