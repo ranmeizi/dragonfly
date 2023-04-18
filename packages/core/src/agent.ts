@@ -1,4 +1,5 @@
 import { Controller } from './abstruct'
+import { Duration } from './duration'
 
 type TrackAdaptor = () => Controller
 
@@ -13,6 +14,10 @@ class Agent {
     track = applyFn('track')
     setGlobal = applyFn('setGlobal')
     setAccount = applyFn('setAccount')
+
+    duration = new Duration({
+        track: this.track
+    })
 }
 
 function applyFn(name: keyof Controller) {
