@@ -1,6 +1,9 @@
 {
-  "name": "@dgfly/adaptor",
+  "name": "@dgfly/impl",
   "version": "1.0.0",
   "main": "index.js",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "@dgfly/core": "1.0.0"
+  }
 }
