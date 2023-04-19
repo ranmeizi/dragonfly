@@ -14,6 +14,7 @@ describe('switch test', () => {
             userAgent: u
         }
         const res = ua()
+        console.log(res)
         expect(res.device.model).toBe("L79031")
     })
 })
